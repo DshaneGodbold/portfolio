@@ -1,11 +1,11 @@
 <template>
   <div>
-<nav>
+    <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About Me</router-link> |
+      <router-link to="/skills">About Me</router-link> |
       <router-link to="/resume">Resume</router-link> |
     </nav>
-<router-view/>
+  <router-view/>
   </div>
 </template>
 
