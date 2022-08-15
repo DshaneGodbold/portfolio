@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="area" >
-      <NavBar />
       <ul class="circles">
         <li></li>
                     <li></li>
@@ -37,15 +36,13 @@
 </template>
 
 <script>
-import NavBar from './NavBar.vue';
-
 
 export default {
     name: "HelloWorld",
     props: {
         msg: String
     },
-    components: { NavBar }
+    components: {}
 }
 </script>
 
