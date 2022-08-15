@@ -1,27 +1,16 @@
 <template>
-<div>
-  <NavBar class="navbar"/>
-  <HelloWorld/>
-      </div>
+    <HelloWorld />
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue' 
-import NavBar from '@/components/NavBar.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     HelloWorld,
-    NavBar
-}
-}
+  },
+};
 </script>
 
-<style>
-
-.navbar{
-  background-color: #2481ac ;
-}
-
-</style>
+<style></style>

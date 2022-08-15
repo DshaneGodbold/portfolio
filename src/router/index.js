@@ -13,7 +13,7 @@ const routes = [
   },
   {
     path: '/skills ',
-    name: 'skills',
+    name: 'myskills',
     component: AboutView
   }
 ]
