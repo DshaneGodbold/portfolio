@@ -119,10 +119,10 @@ body{
 
 
 .area{
-    background: #4e54c8;  
+    background: #2481ac;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:400vh;
+    height:200vh;
 
 }
 
@@ -142,7 +142,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: #C59FC9;
+    background: #3fa94e;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
