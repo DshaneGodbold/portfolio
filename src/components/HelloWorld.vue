@@ -25,6 +25,7 @@
       <h3 class="Google text-focus-in">Google</h3>
       <ul class="pulsate-bck">
         <li>
+          <box-icon name="rocket" animation="" />
           <a
             href="https://Dshanegodbold@gmail.com"
             target="_blank"
@@ -55,6 +56,7 @@
 </template>
 
 <script>
+import boxicons from "boxicons";
 export default {
   name: "HelloWorld",
   props: {
@@ -154,14 +156,14 @@ body {
 }
 
 .area {
-    background: #2481ac;
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-    width: 100%;
-    /* height: 200vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background: #2481ac;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .circles {

@@ -1,14 +1,16 @@
 <template>
-    <MySkills />
+  <MySkills />
 </template>
 
 <script>
 // @ is an alias to /src
-import MySkills from '@/components/MySkills.vue';
+import MySkills from "@/components/MySkills.vue";
 export default {
-  name: 'AboutView',
+  name: "AboutView",
   components: {
     MySkills,
-}
-}
+  },
+};
 </script>
+
+<style></style>

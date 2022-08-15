@@ -1,8 +1,8 @@
 <template>
-<div>
-  <NavBar class="navbar"/>
-  <router-view/>
-</div>
+  <div>
+    <NavBar class="navbar" />
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-.navbar{
-  background-color: #2481ac ;
-}</style>
+.navbar {
+  background-color: #2481ac;
+}
+</style>
