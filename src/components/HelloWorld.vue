@@ -25,30 +25,31 @@
       <h3 class="Google text-focus-in">Google</h3>
       <ul class="pulsate-bck">
         <li>
-          <box-icon name="rocket" animation="" />
+                    <box-icon type="logo" name="gmail" animation="tada" color='red' />
           <a
             href="https://Dshanegodbold@gmail.com"
             target="_blank"
             rel="noopener"
             >Gmail</a
-          >
+            >
         </li>
       </ul>
       <h3 class="text-focus-in">Github</h3>
       <ul class="pulsate-bck">
         <li>
+          <box-icon type="logo" name="github" animation="spin" color='purple'/>
           <a
             href="https://github.com/DshaneGodbold"
             target="_blank"
             rel="noopener"
-            >D'Shane's Github</a
-          >
+            >D'Shane's Github</a>
         </li>
       </ul>
       <h3 class="text-focus-in">Resume</h3>
       <ul class="pulsate-bck">
         <li>
-          <a href="/files/Dshane-Godbold.pdf" download="">Resume</a>
+          <box-icon name='file-pdf' type='solid' animation="fade-down" color='orange' />
+          <a href="/files/Dshane's SnapIT Resume.pdf" download="">Resume</a>
         </li>
       </ul>
     </div>
@@ -119,6 +120,7 @@ a {
 .pulsate-bck {
   animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
+
 
 @keyframes pulsate-bck {
   0% {
@@ -268,7 +270,7 @@ body {
     opacity: 1;
     border-radius: 0;
   }
-
+  
   100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
