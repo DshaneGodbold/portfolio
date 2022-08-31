@@ -7,13 +7,37 @@ of Simple CSS Waves-->
 <div class="inner-header flex">
 <!--Just the logo.. Don't mind this-->
 <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-<h1>About Me</h1>
+<h1 id="letter-bounce" value="letter-bounce" class="letter-bounce">About Me</h1>
 <p>Hello <box-icon name="hand" type="solid" color="#ffffff" animation="tada"/> !
  My name is Dshane Godbold, <box-icon name='happy-beaming' type='solid' animation='spin' color='#ffffff'/>
 and I am a computer programming Apprentice at SnapIT Solutions!<box-icon name='business' type='solid' animation='flashing' color='#03ff00'/>
  I am working on this portoflio
  to show off my skills so I think this would be a good way to show it off! <box-icon name='heart' type='solid' color='#ff0000'/> </p>
 </div>
+
+<div class="pics">
+
+  <img
+  class="china-pic"
+  alt=""
+  src="@/assets/china.jpg"
+  />
+  <img
+  class="spectrum-pic"
+  alt=""
+  src="@/assets/spectrum.jpg"
+  />
+  <img
+  class="happy-pic"
+  alt=""
+  src="@/assets/happy.jpg"
+  />
+</div>
+  
+
+
+
+
 <div>
 
 
@@ -51,10 +75,12 @@ export default {
     msg: String,
   },
 };
+
+
+
 </script>
 
 <style>
-
 
 
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
@@ -63,12 +89,49 @@ body {
   margin:0;
 }
 
+.pics{
+  padding: 15px;
+  text-align: center;
+}
+
+.spectrum-pic{
+  object-fit: cover;
+  width: 350px;
+  height:279px;
+}
+
+.china-pic{
+  object-fit: cover;
+  width: 350px;
+  height:279px;
+}
+
+.happy-pic{
+  object-fit: cover;
+  width: 350px;
+  height:279px;
+}
+
+
 p  {
-    font-family: 'Comic Sans', 'Times New Roman', Times, serif;
+    font-family: 'Baloo Thambi', cursive;
     font-weight: 300;
     font-size: xx-large;
     text-align: inherit;
     padding-bottom: 10cm;
+    animation: glow 8s ease-in-out 2s infinite;
+}
+
+@keyframes glow{
+  0%, 100%{
+    color: #fff;
+    text-shadow: 0 0 10px #8a2be2, 0 0 50px #8a2be2, 0 0 100px #8a2be2;
+  }
+
+  10%, 90%{
+    color: #fff;
+    text-shadow: none;
+  }
 }
 
 h1 {
@@ -77,6 +140,49 @@ h1 {
   letter-spacing: 2px;
   font-size:52px;
 }
+
+.letter-bounce
+{
+  opacity: 0;
+  transform: translateY(-5rem);
+  animation: bounce 5000ms ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes bounce
+{
+  0%, 100%
+  {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+  10%
+  {
+    transform: translateY(0) scaleY(0.8) scaleX(1.2);
+    opacity: 1;
+  }
+  20%
+  {
+    transform: translateY(-2.5rem) scaleY(1) scaleX(1);
+  }
+  30%
+  {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+  90%
+  {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+  95%
+  {
+    opacity: 0;
+  }
+}
+
+
+
 
 .header {
   position:relative;
