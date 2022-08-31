@@ -1,23 +1,16 @@
 <template>
-  <div>
-    <h1>yes this is dshane godbold whats going on?'</h1>
-    <img class="shane" src="../assets/portfolio-pic.jpg" />
-  </div>
+  <MySkillsBackground />
 </template>
 
 <script>
+import MySkillsBackground from '@/components/MySkillsBackground.vue';
+// @ is an alias to /src
 export default {
   name: "MySkills",
-  props: {
-    msg: String,
+  components: {
+    MySkillsBackground,
   },
 };
 </script>
 
-<style>
-.h1 {
-  background-color: black;
-  position: relative;
-}
-
-</style>
+<style></style>

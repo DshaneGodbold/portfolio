@@ -1,8 +1,10 @@
 <template>
   <div class="main">
-    <div class="area">
-      <ul class="circles">
-        <li></li>
+    <v-app>
+    
+      <div class="area">
+        <ul class="circles">
+          <li></li>
         <li></li>
         <li></li>
         <li></li>
@@ -25,7 +27,7 @@
       <h3 class="Google text-focus-in">Google</h3>
       <ul class="pulsate-bck">
         <li>
-                    <box-icon type="logo" name="gmail" animation="tada" color='red' />
+          <box-icon type="logo" name="gmail" animation="tada" color='red' />
           <a
             href="https://Dshanegodbold@gmail.com"
             target="_blank"
@@ -53,6 +55,7 @@
         </li>
       </ul>
     </div>
+    </v-app>
   </div>
 </template>
 
